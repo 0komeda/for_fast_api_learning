@@ -1,0 +1,9 @@
+version: '3.11'
+services:
+  demo-app:
+    build: .
+    volumes:
+      - .:/src
+      - .dockervenv:/src/.venv
+    ports:
+      - 8000:8000
